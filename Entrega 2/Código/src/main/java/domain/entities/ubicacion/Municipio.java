@@ -1,6 +1,5 @@
-package domain.entities.ubicacion;
+package entrega2.ubicacion;
 
-public class Municipio {
-    public int id;
-    public String nombre;
+public class Municipio extends Localizacion {
+    private Provincia provincia;
 }

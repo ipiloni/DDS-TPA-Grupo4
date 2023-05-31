@@ -1,27 +1,58 @@
-package domain.entities.csvreader;
+package entrega2.csvreader;
+
+import entrega2.persona.Organizacion;
+import entrega2.persona.TipoOrganizacion;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class CSVReader {
-    public static void main(String[] args) throws IOException {
-        // Agregar la ruta del archivo .csv en csvFile
-        String csvFile = "documentos/CSV_de_prueba.csv";
-        String line;
-        String csvSplitBy = ";";
+    private String csvFile;
+    private String line;
+    private String separarPor = ";";
 
+    public void leerCSV(String rutaDeArchivo) throws IOException {
+        csvFile = rutaDeArchivo;
         BufferedReader br = new BufferedReader(new FileReader(csvFile));
+        br.readLine(); // lee la primer linea
+
+        Organizacion organizacion;
+
+        String tipoOrg;
+        String razonSocial;
+        String mail;
+
         while ((line = br.readLine()) != null) {
-            String[] data = line.split(csvSplitBy);
+            String[] columnas = line.split(separarPor);
 
-            // Procesar los datos leídos del archivo CSV
-
-            for (String value : data) {
-                System.out.print(value + " ");
+            for(int i=0; i < columnas.length; i++) {
+                organizacion = new Organizacion();
+                switch(i) {
+                    case 0:
+                        organizacion.setTipoOrganizacion(this.leerPrimerColumna(columnas[i]));
+                        break;
+                    case 1:
+                        organizacion.setRazonSocial(columnas[i]);
+                        break;
+                    case 2:
+                        organizacion.setMailEncargado(columnas[i]);
+                        break;
+                }
             }
-            System.out.println();
+
         }
         br.close();
+    }
+
+    private TipoOrganizacion leerPrimerColumna(String columna) {
+        switch (columna.toLowerCase()) {
+            case "entidad propietaria":
+                return TipoOrganizacion.ENTIDAD_PROPIETARIA;
+            case "organismo de control":
+                return TipoOrganizacion.ORGANISMO_CONTROL;
+            default: break;
+        }
+        return null;
     }
 }

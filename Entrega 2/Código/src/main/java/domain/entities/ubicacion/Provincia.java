@@ -1,6 +1,5 @@
-package domain.entities.ubicacion;
+package entrega2.ubicacion;
 
 public class Provincia {
-    public int id;
-    public String nombre;
+    private String pais;
 }
