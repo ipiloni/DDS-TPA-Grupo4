@@ -1,4 +1,4 @@
-package domain.validadorDeContrasenias;
+package domain.entities.validadorDeContrasenias;
 
 import java.util.ArrayList;
 import java.util.Collections;

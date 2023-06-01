@@ -1,7 +1,7 @@
-package entrega2.entidad;
+package domain.entities.entidad;
 
-import entrega2.servicio.PrestacionServicio;
-import entrega2.ubicacion.Ubicacion;
+import domain.entities.servicio.PrestacionServicio;
+import domain.entities.ubicacion.Ubicacion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,14 @@ public class Establecimiento {
     public Establecimiento(){
         this.servicios = new ArrayList<>();
     }
+
     public void agregarServicio(PrestacionServicio servicio) {
         this.servicios.add(servicio);
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Object getNombre() { return nombre; }
 }

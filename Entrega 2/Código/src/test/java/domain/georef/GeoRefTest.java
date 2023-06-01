@@ -30,8 +30,8 @@ public class GeoRefTest {
     @DisplayName("La provincia de Corrientes tiene a Monte Caseros como localidad.")
     public void provinciaTiene() throws IOException {
         ListadoDeProvincias provincias = servicioGeoref.listadoDeProvincias();
-
-        provincias.provinciaDeId();
+        provincia = provincias.provinciaDeId(18);
+        //ListadoDeMunicipios municipios = servicioGeoref.listadoDeMunicipiosDeProvincia(provincia);
     }*/
 
 

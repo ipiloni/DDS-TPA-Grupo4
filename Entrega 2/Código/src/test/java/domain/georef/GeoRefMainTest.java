@@ -18,10 +18,10 @@ public class GeoRefMainTest {
 
         ListadoDeProvincias listadoDeProvinciasArgentinas = servicioGeoref.listadoDeProvincias();
 
-        listadoDeProvinciasArgentinas.provincias.sort((p1, p2) -> p1.id >= p2.id? 1 : -1);
+        listadoDeProvinciasArgentinas.provincias.sort((p1, p2) -> p1.getId() >= p2.getId()? 1 : -1);
 
         for(Provincia unaProvincia:listadoDeProvinciasArgentinas.provincias){
-            System.out.println(unaProvincia.id + ") " + unaProvincia.nombre);
+            System.out.println(unaProvincia.getId() + ") " + unaProvincia.getNombre());
         }
 
         Scanner entradaEscaner = new Scanner(System.in);
@@ -32,9 +32,9 @@ public class GeoRefMainTest {
         if(posibleProvincia.isPresent()){
             Provincia provinciaSeleccionada = posibleProvincia.get();
             ListadoDeMunicipios municipiosDeLaProvincia = servicioGeoref.listadoDeMunicipiosDeProvincia(provinciaSeleccionada);
-            System.out.println("Los municipios de la provincia "+ provinciaSeleccionada.nombre +" son:");
+            System.out.println("Los municipios de la provincia "+ provinciaSeleccionada.getNombre() +" son:");
             for(Municipio unMunicipio: municipiosDeLaProvincia.municipios){
-                System.out.println(unMunicipio.nombre);
+                System.out.println(unMunicipio.getNombre());
             }
         }
         else{

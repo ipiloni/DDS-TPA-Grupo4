@@ -1,10 +1,11 @@
-﻿TIPO DE ORGANIZACION;RAZON SOCIAL;MAIL DE DELEGADO
-Entidad propietaria;YPF;enrique.pinti@hotmail.com
-Organismo de control;Yaguar;marquitosgurru@hotmail.com
-Entidad propietaria;Nike;ignapiloni@hotmail.com
-Organismo de control;Adidas;guadabe@hotmail.com
-Organismo de control;Puma;chiarabe@gmail.com
-Entidad propietaria;Umbro;moritaro@gmail.com
-Organismo de control;Ford;abrilsanchez@hotmail.com
-Entidad propietaria;Renault;mauropitingo@hotmail.com
-Entidad propietaria;Fiat;manuelaperez@gmail.com
+﻿RAZON SOCIAL;TIPO DE ORGANIZACION;ENTIDAD;MAIL DE DELEGADO;ESTABLECIMIENTO
+Supermercado XYZ;Entidad Propietaria;Supermercado XYZ;marquitosgurru@hotmail.com;Sucursal A
+Supermercado XYZ;Entidad Propietaria;Supermercado XYZ;marquitosgurru@hotmail.com;Sucursal B
+Autoridad Reguladora del Transporte Subterráneo;Organismo de Control;Línea H de Subte;ignapiloni@hotmail.com;
+Transporte Público S.A.;Entidad Propietaria;Línea A de Subte;guadagarcia@hotmail.com;Estación Perú
+Transporte Público S.A.;Entidad Propietaria;Línea A de Subte;guadagarcia@hotmail.com;Estación Plaza de Mayo
+Transporte Público S.A.;Entidad Propietaria;Línea B de Subte;guadagarcia@hotmail.com;Estación Dorrego
+Transporte Público S.A.;Entidad Propietaria;Línea B de Subte;guadagarcia@hotmail.com;Estación Federico Lacroze
+Transporte Público S.A.;Entidad Propietaria;Línea B de Subte;guadagarcia@hotmail.com;Estación Malabia
+Autoridad Reguladora de Buenos Aires;Organismo de Control;Línea D de Subte;chiarabe@gmail.com;
+Empalmes Ruteros S.R.L.;Organismo de Control;Linea C de Subte;moritaro@gmail.com;

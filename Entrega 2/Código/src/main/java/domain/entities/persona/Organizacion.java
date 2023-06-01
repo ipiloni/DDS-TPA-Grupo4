@@ -1,6 +1,6 @@
-package entrega2.persona;
+package domain.entities.persona;
 
-import entrega2.entidad.Entidad;
+import domain.entities.entidad.Entidad;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,6 @@ public class Organizacion {
     private String razonSocial;
     private String mailEncargado;
     private List<Entidad> entidades;
-
     private TipoOrganizacion tipoOrganizacion;
 
     public Organizacion(){
@@ -33,4 +32,11 @@ public class Organizacion {
         this.tipoOrganizacion = tipoOrganizacion;
     }
 
+    public String getRazonSocial() { return this.razonSocial; }
+
+    public List<Entidad> getEntidades() { return entidades; }
+
+    public String getMail() { return mailEncargado; }
+
+    public TipoOrganizacion getTipoOrganizacion() { return tipoOrganizacion; }
 }

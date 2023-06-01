@@ -1,4 +1,4 @@
-package entrega2.servicio;
+package domain.entities.servicio;
 
 public class PrestacionServicio {
 }

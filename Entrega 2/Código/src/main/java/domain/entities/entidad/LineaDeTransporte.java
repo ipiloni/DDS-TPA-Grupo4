@@ -1,6 +1,6 @@
-package entrega2.entidad;
+package domain.entities.entidad;
 
-import entrega2.ubicacion.Localizacion;
+import domain.entities.ubicacion.Localizacion;
 
 public class LineaDeTransporte {
     private Establecimiento estacionOrigen;

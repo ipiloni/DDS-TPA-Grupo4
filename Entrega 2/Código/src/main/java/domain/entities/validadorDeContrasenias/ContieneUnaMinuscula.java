@@ -1,4 +1,4 @@
-package domain.validadorDeContrasenias;
+package domain.entities.validadorDeContrasenias;
 
 public class ContieneUnaMinuscula extends Validacion {
 

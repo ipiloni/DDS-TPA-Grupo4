@@ -1,5 +1,7 @@
 package domain.validadorDeContrasenias;
 
+import domain.entities.validadorDeContrasenias.*;
+
 import java.io.IOException;
 import java.util.Scanner;
 

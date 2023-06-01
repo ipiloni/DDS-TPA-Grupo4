@@ -1,4 +1,4 @@
-package entrega2.persona;
+package domain.entities.persona;
 
 public class Usuario {
     private String nombreUsuario;

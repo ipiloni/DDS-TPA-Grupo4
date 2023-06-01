@@ -1,4 +1,4 @@
-package entrega2.entidad;
+package domain.entities.entidad;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,4 +10,16 @@ public class Entidad {
     public Entidad(){
         this.establecimientos = new ArrayList();
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void agregarEstablecimiento(Establecimiento establecimiento) {
+        this.establecimientos.add(establecimiento);
+    }
+
+    public String getNombre() { return nombre; }
+
+    public List<Establecimiento> getEstablecimientos() { return establecimientos; }
 }

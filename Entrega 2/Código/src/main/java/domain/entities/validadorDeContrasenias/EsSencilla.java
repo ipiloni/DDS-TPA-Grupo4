@@ -1,4 +1,4 @@
-package domain.validadorDeContrasenias;
+package domain.entities.validadorDeContrasenias;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class EsSencilla extends Validacion {
-    private ArrayList<String> clavesAValidar = new ArrayList<String>();
+    private ArrayList<String> clavesAValidar = new ArrayList<>();
 
     /* Al inicializarse la clase, se leen las 10.000 peores contrasenias
        desde el archivo .txt y se las aniade a la lista clavesAValidar */
